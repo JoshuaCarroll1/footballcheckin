@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['footballcheckup.herokuapp.com' 'localhost']
+ALLOWED_HOSTS = ['footballcheckup-ae432318f52b.herokuapp.com']
 
 
 # Application definition
@@ -43,8 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'cloudinary_storage',
     'django.contrib.staticfiles',
-    'todo'
-    'cloudinary'
+    'todo',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
