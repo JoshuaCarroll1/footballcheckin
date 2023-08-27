@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['footballcheckup-ae432318f52b.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['8000-joshuacarro-footballche-9cwx1bm33uw.ws-eu104.gitpod.io']
 
 
 # Application definition
