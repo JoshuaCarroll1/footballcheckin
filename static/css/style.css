@@ -1,3 +1,40 @@
 body {
-    background-color: red;
+    background-color: #DDD0C8;
+}
+
+
+.navbar {
+    background-color: #964B00;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+h1  {
+    color: #323232;
+}
+
+li  {
+     color: #323232;
+}
+
+#logo    {
+
+    height: 500px;
+    width: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }

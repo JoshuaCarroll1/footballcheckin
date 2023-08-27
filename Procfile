@@ -1,1 +1,1 @@
-web: gunicorn football_checkup.wsgi:application
+web: gunicorn football_checkup.wsgi
