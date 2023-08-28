@@ -69,3 +69,29 @@ section {
     width: 30%;
     margin-bottom: 50px;
 }
+
+hr  {
+    border: 1px solid #964B00;
+}
+
+@media screen and (min-width:860px) {
+    #logo1  {
+        height: 500px;  
+        width: 75%;
+    }
+    #logo2  {
+        height: 500px;  
+        width: 75%;
+    }
+    .btn    {
+        width: 10%;
+    }
+    p {
+        font-size: 20px;
+    }
+
+    h2  {
+        font-size: 40px;
+    }
+}
+    
