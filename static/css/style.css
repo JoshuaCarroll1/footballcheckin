@@ -27,9 +27,9 @@ li  {
 }
 
 #logo    {
-
-    height: 500px;
+    height: 180px;
     width: 100%;
+    gap: 5rem;
 }
 
 .center {
