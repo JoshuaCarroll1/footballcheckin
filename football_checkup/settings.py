@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-joshuacarro-footballche-9cwx1bm33uw.ws-eu104.gitpod.io']
+ALLOWED_HOSTS = ['8000-joshuacarro-footballche-9cwx1bm33uw.ws-eu104.gitpod.io', 'footballcheckup-ae432318f52b.herokuapp.com/']  # noqa
 
 
 # Application definition
@@ -41,21 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.sites'
-    'allauth'
-    'allauth.account'
-    'allauth.socialaccount'
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'todo',
-    'django_summernote'
-    'cloudinary',
 ]
 
-SITE_ID = 1
-
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

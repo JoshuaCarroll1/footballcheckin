@@ -31,27 +31,27 @@ I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0
 
 ### New Site Users
 
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
+- As a new site user, I would like to register, so that I can gain autherisation.
+- As a new site user, I would like to see home page, so that I can see the blogs.
+- As a new site user, I would like to see the about page, so that I can see what the wbsite is about.
+- As a new site user, I would like to like blogs, so that I can show my reaction.
+- As a new site user, I would like to dislike blogs, so that I can show my reaction.
 
 ### Returning Site Users
 
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
+- As a returning site user, I would like to login, so that I can gain autherisation.
+- As a returning site user, I would like to logout, so that I can lose autherisation.
+- As a returning site user, I would like to see new posts, so that I can see news.
+- As a returning site user, I would like to like new posts, so that I can so that I can show my reaction.
+- As a returning site user, I would like to dislike new posts, so that I can so that I can show my reaction_.
 
 ### Site Admin
 
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
+- As a site administrator, I should be able to see likes, so that I can see how many people like our blog.
+- As a site administrator, I should be able to remove posts, so that I can update blogs .
+- As a site administrator, I should be able to remove likes, so that I can get a real depiction of who likes the blogs.
+- As a site administrator, I should be able to see dislikes, so that I can so that I can see how many people dislike our blog.
+- As a site administrator, I should be able to remove dislikes, so that I can get a real depiction of who dislikes the blogs.
 
 ## Wireframes
 
@@ -153,7 +153,7 @@ class Product(models.Model):
 ```
 
 
-![screenshot](documentation/erd.png)
+![screenshot](documentation/models.JPG)
 
 
 - Table: **Product**
