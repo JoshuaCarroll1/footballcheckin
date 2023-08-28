@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-joshuacarro-footballche-9cwx1bm33uw.ws-eu104.gitpod.io', 'footballcheckup-ae432318f52b.herokuapp.com/']  # noqa
 
