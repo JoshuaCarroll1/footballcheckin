@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&display=swap');
+
+
 body {
     background-color: #DDD0C8;
     margin: 20px;
     font-family: 'DM Sans', sans-serif;
-    font-size: 20px;
 }
 
 
@@ -14,11 +15,13 @@ body {
     top: 0%;
     width: 100%;
     height: auto;
-    font-family: 'Indie Flower', cursive;}
+    font-family: 'Indie Flower', cursive;
+}
 
 a {
     color: #000000;
     text-decoration: none;
+    font-size: 25px;
 }
 
 a:hover {
@@ -26,17 +29,24 @@ a:hover {
     text-decoration: none;
 }
 
+.heading {
+    text-align: center;
+}
 
-h1  {
+h1 {
     color: #323232;
-    font-size: 50px;
 }
 
-li  {
-     color: #323232;
+h2 {
+    margin-top: 100px;
+    margin-bottom: 120px;
 }
 
-#logo1    {
+li {
+    color: #323232;
+}
+
+#logo1 {
     margin-bottom: 100px;
     height: 250px;
     width: 100%;
@@ -44,14 +54,14 @@ li  {
     margin-top: 150px;
 }
 
-#logo2    {
+#logo2 {
     margin-bottom: 60px;
     height: 250px;
     width: 100%;
     object-fit: cover;
 }
 
-.push   {
+.push {
     margin-top: 100px;
 }
 
@@ -69,34 +79,37 @@ section {
     padding-top: 60px;
 }
 
-.btn  {
+.btn {
     width: 30%;
     margin-bottom: 50px;
 }
 
-hr  {
+hr {
     border: 1px solid #964B00;
 }
 
 @media screen and (min-width:860px) {
-    #logo1  {
-        height: 500px;  
+    #logo1 {
+        height: 500px;
         width: 75%;
     }
-    #logo2  {
-        height: 500px;  
+
+    #logo2 {
+        height: 500px;
         width: 75%;
     }
-    .btn    {
+
+    .btn {
         height: 50px;
         width: 15%;
     }
+
     p {
         font-size: 20px;
     }
 
-    h2  {
+    h2 {
         font-size: 40px;
     }
+
 }
-    
