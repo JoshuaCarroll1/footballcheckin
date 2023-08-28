@@ -1,14 +1,16 @@
+/* Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&display=swap');
 
-
+/* Body */
 body {
     background-color: #DDD0C8;
     margin: 20px;
     font-family: 'DM Sans', sans-serif;
 }
 
-
+/* Navbar */
 .navbar {
     background-color: #964B00;
     position: fixed;
@@ -33,6 +35,16 @@ a:hover {
     text-align: center;
 }
 
+.push {
+    margin-top: 100px;
+}
+
+li {
+    color: #323232;
+}
+
+/* Headings */
+
 h1 {
     color: #323232;
 }
@@ -42,9 +54,7 @@ h2 {
     margin-bottom: 120px;
 }
 
-li {
-    color: #323232;
-}
+/* Media */
 
 #logo1 {
     margin-bottom: 100px;
@@ -61,10 +71,7 @@ li {
     object-fit: cover;
 }
 
-.push {
-    margin-top: 100px;
-}
-
+/* Layout */
 
 .center {
     display: block;
@@ -79,14 +86,21 @@ section {
     padding-top: 60px;
 }
 
+/* Button  */
+
 .btn {
     width: 30%;
     margin-bottom: 50px;
 }
 
+/* Hr */
+
 hr {
     border: 1px solid #964B00;
 }
+
+
+/* Media Queries */
 
 @media screen and (min-width:860px) {
     #logo1 {
