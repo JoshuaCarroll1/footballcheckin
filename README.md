@@ -77,21 +77,21 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 - **Sign in #1**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Top of page you can click sign in to sign into your account!
 
-![screenshot](documentation/feature01.png)
+![screenshot](documentation/signin.JPG)
 
-- **Sign out #2**
+- **About Page #2**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - To see what our page is all about!
 
-![screenshot](documentation/feature02.png)
+![screenshot](documentation/about.JPG)
 
 - **Like and Dislike #3**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Let us know of what you think about our blogs!
 
-![screenshot](documentation/feature03.png)
+![screenshot](documentation/likedislike.JPG)
 
 
 
@@ -100,12 +100,12 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 
 
-- Title for future feature #1
-    - Any additional notes about this feature.
-- Title for future feature #2
-    - Any additional notes about this feature.
-- Title for future feature #3
-    - Any additional notes about this feature.
+- Comment section #1
+    - A comment section under posts to see how people react.
+- More blog posts #2
+    - More blog posts that are new and relevant.
+- Edit button #3
+    - Within the comment section you can edit your comments.
 
 ## Tools & Technologies Used
 
