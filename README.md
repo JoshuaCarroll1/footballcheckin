@@ -8,9 +8,8 @@
 
 
 - `#000000` used for primary text.
-- `#E84610` used for primary highlights.
-- `#4A4A4F` used for secondary text.
-- `#009FE3` used for secondary highlights.
+- `#DDD0C8` used for primary background.
+- `#964B00` used for secondary background.
 
 
 I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0-000000) to generate my colour palette.
@@ -18,26 +17,12 @@ I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0
 ![screenshot](documentation/coolors.png)
 
 
-I've used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
-
-```css
-:root {
-    /* P = Primary | S = Secondary */
-    --p-text: #000000;
-    --p-highlight: #E84610;
-    --s-text: #4A4A4F;
-    --s-highlight: #009FE3;
-    --white: #FFFFFF;
-    --black: #000000;
-}
-```
-
 ### Typography
 
 
-- [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
+- [Indie Flower](https://fonts.google.com/specimen/Indie+Flower) was used for the navbar text.
 
-- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
+- [DM Sans](https://fonts.google.com/specimen/DM+Sans) was used for all other primary text.
 
 - [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
