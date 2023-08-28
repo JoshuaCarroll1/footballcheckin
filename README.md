@@ -372,6 +372,9 @@ You can fork this repository by using the following steps:
 | [Behance](https://www.behance.net) | entire site | image | (https://mir-s3-cdn-cf.behance.net/project_modules/1400/d94d4734192819.576d59e2ec5d7.jpg) |
 | [Eplindex](https://eplindex.com) | entire site | image | (https://eplindex.com/wp-content/uploads/Manchester-United-vs-Nottingham-Forest-scaled.webp) |
 | [Sportinglife](https://www.sportinglife.com) | entire site | image | (https://www.sportinglife.com/images/news/945x532/9d1c82bd-e5cf-44cb-9f21-d9e2fc4fc8a3.jpg) |
+| [halffreesk](https://halffreesk.live/) | entire site | image | (https://www.retroclasico.co.uk/wp-content/uploads/2020/08/THIERRY-HENRY-SQUARE.fw_.png) |
+| [retroclasico](https://www.retroclasico.co.uk/) | entire site | image | (https://www.retroclasico.co.uk/wp-content/uploads/2020/08/ERIC-CANTONA-SQUARE.fw_-600x600.png) |
+| [retroclasico](https://www.retroclasico.co.uk/) | entire site | image | (https://www.retroclasico.co.uk/wp-content/uploads/2020/08/DAVIE-COOPER-SQUARE.fw_-600x600.png) |
 
 
 ### Acknowledgements
