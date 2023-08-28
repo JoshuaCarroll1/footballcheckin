@@ -14,7 +14,7 @@
 
 I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0-000000) to generate my colour palette.
 
-![screenshot](documentation/coolors.png)
+![screenshot](documentation/coolors.JPG)
 
 
 ### Typography
@@ -59,7 +59,6 @@ I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0
 To follow best practice, wireframes were developed for desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
-![screenshot](documentation/wf1.JPG)
 
 ### Home Page Wireframes
 
@@ -344,11 +343,6 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## Credits
 
@@ -362,7 +356,7 @@ Use this space to discuss any differences between the local version you've devel
 | [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
 | [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
 | [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
-| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
+| [W3Schools](https://www.w3schools.com/css/) | entire site | how to use CSS |
 | [Flexbox Froggy](https://flexboxfroggy.com/) | entire site | modern responsive layouts |
 | [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
 | [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
@@ -374,6 +368,11 @@ Use this space to discuss any differences between the local version you've devel
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
 | [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+| [pngegg](https://www.pngegg.com) | entire site | image | (https://e7.pngegg.com/pngimages/671/338/png-clipart-fifa-world-cup-football-player-soccer-ball-posters-sport-football-boot.png) |
+| [Behance](https://www.behance.net) | entire site | image | (https://mir-s3-cdn-cf.behance.net/project_modules/1400/d94d4734192819.576d59e2ec5d7.jpg) |
+| [Eplindex](https://eplindex.com) | entire site | image | (https://eplindex.com/wp-content/uploads/Manchester-United-vs-Nottingham-Forest-scaled.webp) |
+| [Sportinglife](https://www.sportinglife.com) | entire site | image | (https://www.sportinglife.com/images/news/945x532/9d1c82bd-e5cf-44cb-9f21-d9e2fc4fc8a3.jpg) |
+
 
 ### Acknowledgements
 
