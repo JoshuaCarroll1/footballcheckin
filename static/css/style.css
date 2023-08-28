@@ -84,7 +84,8 @@ hr  {
         width: 75%;
     }
     .btn    {
-        width: 10%;
+        height: 50px;
+        width: 15%;
     }
     p {
         font-size: 20px;
