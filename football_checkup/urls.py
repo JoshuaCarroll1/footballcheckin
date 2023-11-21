@@ -15,14 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from todo.views import get_index
-from todo.views import get_about
-
+from todo.views import get_index, get_about
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', get_index, name='index'),
     path('about/', get_about, name='about'),
-    path('accounts/', get_about, name='sign in'),
+    # path('accounts/', , name='sign_in'),
     path('summernote/', include('django_summernote.urls')),
 ]

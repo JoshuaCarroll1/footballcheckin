@@ -28,9 +28,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.environ.get("DEBUG", False)
 
-ALLOWED_HOSTS = ['8000-joshuacarro-footballche-9cwx1bm33uw.ws-eu104.gitpod.io', 'footballcheckup-ae432318f52b.herokuapp.com/']  # noqa
+ALLOWED_HOSTS = ['8000-joshuacarro-footballche-odbqo7qhqiz.ws-eu106.gitpod.io', 'footballcheckup-ae432318f52b.herokuapp.com/']  # noqa
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'cloudinary_storage',
     'django.contrib.staticfiles',
+    'django_summernote',
     'todo',
 ]
 
