@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", False)
 
-ALLOWED_HOSTS = ['8000-joshuacarro-footballche-odbqo7qhqiz.ws-eu106.gitpod.io', 'footballcheckup-ae432318f52b.herokuapp.com/']  # noqa
+ALLOWED_HOSTS = ['8000-joshuacarro-footballche-odbqo7qhqiz.ws-eu106.gitpod.io', 'footballcheckup-ae432318f52b.herokuapp.com']  # noqa
 
 
 # Application definition
