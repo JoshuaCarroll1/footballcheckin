@@ -16,3 +16,25 @@ def get_matches(request):
     return render(request, template, context)
 
 
+def add_match(request):
+    """
+    Function to add a new match - if superuser
+    """
+    if not request.user.is_superuser:
+        messages.error(request, "Not authorised. Please try again.")
+        return redirect(reverse(get_matches))
+    # is superuser - proceed
+    form = MatchForm(request.POST or None, request.FILES)
+    if request.method == "POST":
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Match added!")
+            return redirect(reverse(get_matches))
+        messages.error(request, "Error - please try again")
+    template = "matches/add_match.html"
+    context = {
+        "form": form,
+    }
+    return render(request, template, context)
+
+
