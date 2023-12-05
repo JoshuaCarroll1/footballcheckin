@@ -73,14 +73,6 @@ h2 {
 
 /* Layout */
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    text-align: center;
-}
-
 section {
     z-index: -1;
     padding-top: 60px;
