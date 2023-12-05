@@ -30,7 +30,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", False)
 
-ALLOWED_HOSTS = ['8000-joshuacarro-footballche-odbqo7qhqiz.ws-eu106.gitpod.io', 'footballcheckup-ae432318f52b.herokuapp.com']  # noqa
+ALLOWED_HOSTS = [
+    '8000-joshuacarro-footballche-a0ry1rw2vvg.ws-eu106.gitpod.io',
+    'footballcheckup-ae432318f52b.herokuapp.com'
+]
 
 
 # Application definition
@@ -42,14 +45,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'cloudinary_storage',
+    'cloudinary',
     'django.contrib.staticfiles',
-    'django_summernote',
     'todo',
+    'matches',
 ]
 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
