@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col">
+        <h1>Add a Match</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <form action="{% url 'add_match' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-success">Add Match</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
