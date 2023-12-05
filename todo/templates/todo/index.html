@@ -1,42 +1,7 @@
-{% load static %}
-<!-- Html -->
-<!DOCTYPE html>
-<html lang="en">
-<!-- Head -->
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title -->
-    <title>Football Checkin</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
-    </script>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.png' %}">
-</head>
-<!-- Body -->
+{% block content %}
 
-<body>
-    <div class="container">
-        <!-- Nav -->
-        <nav class="navbar fixed-top navbar-expand-lg">
-            <a class="heading" href="#">Football Checkin</a>
-            <!-- List -->
-            <ul class="nav d-flex float-right">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sign up</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sign in</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
-                </li>
-        </nav>
-    </div>
     <!-- Blog -->
     <div>
         <img id="logo1" class="center" src="{% static 'images/logo2.jpg' %}" type="images/jpeg">
@@ -50,9 +15,6 @@
             <p>United barely get away with a win after going 2-0 in the first 5 minutes to Nottingham Forrest but
                 some magic
                 from Bruno, United grasp the win.</p>
-            <!-- Buttons -->
-            <button type="button" class="btn btn-success center">Like</button>
-            <button type="button" class="btn btn-danger center">Dislike</button>
         </div>
     </div>
     <hr>
@@ -65,20 +27,19 @@
         <div class="row justify-content-md-center">
             <p>Darwin Nunez shows off why hes worth the money paid for him last summer with two quick and clinical goals
                 for a very important win.</p>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <!-- Buttons -->
+            <button type="button" class="btn btn-success center">Like</button>
+            <button type="button" class="btn btn-danger center">Dislike</button>
             <!-- Buttons -->
             <button type="button" class="btn btn-success center">Like</button>
             <button type="button" class="btn btn-danger center">Dislike{{ post.number_likes }}</button>
         </div>
     </div>
     <hr>
-    <!-- Footer -->
-    <div>
-        <footer>
-            <p class="center">Copyright 2023</p>
-            <p class="center"><a href="https://github.com/JoshuaCarroll1"><i class="fa-brands fa-github"></i></p>
-        </footer>
-    </div>
-</body>
-<script src="https://kit.fontawesome.com/ca67bd5760.js" crossorigin="anonymous"></script>
 
-</html>
+    {%endblock%}

@@ -23,48 +23,29 @@
     <div class="container">
         <!-- Nav -->
         <nav class="navbar fixed-top navbar-expand-lg">
-            <a class="heading" href="#">Football Checkin</a>
+            <a class="heading" href="{% url 'home' %}">Football Checkin</a>
             <!-- List -->
             <ul class="nav d-flex float-right">
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign Out</a>
+                </li>
+                {% else %}
                 <li class="nav-item">
                     <a class="nav-link" href="#">Sign up</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sign in</a>
-                </li>
+                {% endif %}
                 <li class="nav-item">
                     <a class="nav-link" href="/about">About</a>
                 </li>
         </nav>
     </div>
-    <!-- Blog -->
-    <div>
-        <img id="logo1" class="center" src="{% static 'images/logo2.jpg' %}" type="images/jpeg">
-    </div>
-    <h2 class="center">Manchester United make late comeback to win 3-2</h2>
-    <div>
-        <img id="logo2" class="center rounded-sm" src="{% static 'images/post1.jpeg' %}" type="images/jpeg">
-    </div>
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <p>United barely get away with a win after going 2-0 in the first 5 minutes to Nottingham Forrest but
-                some magic
-                from Bruno, United grasp the win.</p>
-        </div>
-    </div>
     <hr>
-    <!-- Blog -->
-    <h2 class="center">Newcastle flop vs 10 man Liverpool with two late goals from Darwin Nunez</h2>
-    <div>
-        <img id="logo2" class="center rounded-sm" src="{% static 'images/post2.jpg' %}" type="images/jpeg">
-    </div>
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <p>Darwin Nunez shows off why hes worth the money paid for him last summer with two quick and clinical goals
-                for a very important win.</p>
-        </div>
-    </div>
-    <hr>
+
+    {% block content %}
+        <!-- Content Goes here -->
+        {% endblock content %}
+    
     <!-- Footer -->
     <div>
         <footer>
