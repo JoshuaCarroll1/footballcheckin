@@ -62,3 +62,16 @@ def edit_match(request, id):
     }
     return render(request, template, context)
 
+
+def delete_match(request, id):
+    """
+    Function to delete a new match - if superuser
+    """
+    if not request.user.is_superuser:
+        messages.error(request, "Not authorised. Please try again.")
+        return redirect(reverse(get_matches))
+    # is superuser - proceed
+    match = get_object_or_404(Match, id=id)
+    match.delete()
+    messages.success(request, "Match deleted!")
+    return redirect(reverse(get_matches))
