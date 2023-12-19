@@ -22,6 +22,6 @@ urlpatterns = [
     path('', get_index, name='index'),
     path('about/', get_about, name='about'),
     path('matches/', include("matches.urls")),
-    path('accounts/', include('allauth.urls')),
+    path("accounts/", include("allauth.urls")),
     # path('accounts/', , name='sign_in'),
 ]

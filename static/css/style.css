@@ -43,6 +43,7 @@ li {
 
 h1 {
     color: #ffffff;
+    margin-top: 100px;
 }
 
 h2 {
@@ -68,8 +69,11 @@ footer  {
     object-fit: cover;
 }
 
-#indexpic   {
-    height: 300px;
+#ball   {
+    height: 250px;
+    width: 70%;
+    object-fit: cover;
+    border-radius: 50%; 
 }
 
 /* Layout */
@@ -96,6 +100,10 @@ hr {
         width: 75%;
     }
 
+    #ball {
+        height: 300px;
+        width: 30%;
+    }
 
     p {
         font-size: 20px;
