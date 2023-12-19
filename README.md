@@ -7,14 +7,14 @@
 ### Colour Scheme
 
 
-- `#000000` used for primary text.
-- `#DDD0C8` used for primary background.
-- `#964B00` used for secondary background.
+- `#ffffff` used for primary text.
+- `#000000` used for primary background.
+- `#3e0a4e` used for secondary background.
 
 
 I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0-000000) to generate my colour palette.
 
-![screenshot](documentation/coolors.JPG)
+![screenshot](documentation/coolors.jpg)
 
 
 ### Typography
@@ -64,8 +64,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 | Size | Screenshot |
 | --- | --- |
-| Desktop | ![screenshot](documentation/wf1.JPG) |
-| Mobile | ![screenshot](documentation/wf2.JPG) |
+| Desktop | ![screenshot](documentation/wf1.jpg) |
+| Mobile | ![screenshot](documentation/wf2.jpg) |
 
 
 ## Features
@@ -78,19 +78,19 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
     - Top of page you can click sign in to sign into your account!
 
-![screenshot](documentation/signin.JPG)
+![screenshot](documentation/signup.jpeg)
 
 - **About Page #2**
 
     - To see what our page is all about!
 
-![screenshot](documentation/about.JPG)
+![screenshot](documentation/about.jpeg)
 
-- **Like and Dislike #3**
+- **Add Matches #3**
 
-    - Let us know of what you think about our blogs!
+    - As a superuser you can add blog posts!
 
-![screenshot](documentation/likedislike.JPG)
+![screenshot](documentation/post.jpeg)
 
 
 
@@ -103,8 +103,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
     - A comment section under posts to see how people react.
 - More blog posts #2
     - More blog posts that are new and relevant.
-- Edit button #3
-    - Within the comment section you can edit your comments.
+- Like button #3
+    - Within the comment section you can like your posts.
 
 ## Tools & Technologies Used
 
@@ -135,40 +135,19 @@ Understanding the relationships between different tables can save time later in 
 
 
 ```python
-class Product(models.Model):
-    category = models.ForeignKey(
-        "Category", null=True, blank=True, on_delete=models.SET_NULL)
-    sku = models.CharField(max_length=254, null=True, blank=True)
-    name = models.CharField(max_length=254)
-    description = models.TextField()
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True)
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
+from django.db import models
+from cloudinary.models import CloudinaryField
+
+# Create your models here.
+class Match(models.Model):
+    title = models.CharField(max_length=150, blank=False, null=False)
+    summary = models.TextField(blank=False, null=False)
+    image = CloudinaryField("image", default="placeholder")
 
     def __str__(self):
-        return self.name
-```
+        return self.title
 
 
-![screenshot](documentation/models.JPG)
-
-
-- Table: **Product**
-
-    | **PK** | **id** (unique) | Type | Notes |
-    | --- | --- | --- | --- |
-    | **FK** | category | ForeignKey | FK to **Category** model |
-    | | sku | CharField | |
-    | | name | CharField | |
-    | | description | TextField | |
-    | | has_sizes | BooleanField | |
-    | | price | DecimalField | |
-    | | rating | DecimalField | |
-    | | image_url | URLField | |
-    | | image | ImageField | |
 
 ## Agile Development Process
 
@@ -189,11 +168,11 @@ It also helped with milestone iterations on a weekly basis.
 
 - [Open Issues](https://github.com/JoshuaCarroll1/footballcheckin/issues)
 
-    ![screenshot](documentation/gh-issues-open.png)
+    ![screenshot](documentation/open.jpeg)
 
 - [Closed Issues](https://github.com/JoshuaCarroll1/footballcheckin/issues?q=is%3Aissue+is%3Aclosed)
 
-    ![screenshot](documentation/gh-issues-closed.png)
+    ![screenshot](documentation/closed.jpeg)
 
 ### MoSCoW Prioritization
 
@@ -369,9 +348,6 @@ You can fork this repository by using the following steps:
 | --- | --- | --- | --- |
 | [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
 | [pngegg](https://www.pngegg.com) | entire site | image | (https://e7.pngegg.com/pngimages/671/338/png-clipart-fifa-world-cup-football-player-soccer-ball-posters-sport-football-boot.png) |
-| [Behance](https://www.behance.net) | entire site | image | (https://mir-s3-cdn-cf.behance.net/project_modules/1400/d94d4734192819.576d59e2ec5d7.jpg) |
-| [Eplindex](https://eplindex.com) | entire site | image | (https://eplindex.com/wp-content/uploads/Manchester-United-vs-Nottingham-Forest-scaled.webp) |
-| [Sportinglife](https://www.sportinglife.com) | entire site | image | (https://www.sportinglife.com/images/news/945x532/9d1c82bd-e5cf-44cb-9f21-d9e2fc4fc8a3.jpg) |
 | [halffreesk](https://halffreesk.live/) | entire site | image | (https://www.retroclasico.co.uk/wp-content/uploads/2020/08/THIERRY-HENRY-SQUARE.fw_.png) |
 | [retroclasico](https://www.retroclasico.co.uk/) | entire site | image | (https://www.retroclasico.co.uk/wp-content/uploads/2020/08/ERIC-CANTONA-SQUARE.fw_-600x600.png) |
 | [retroclasico](https://www.retroclasico.co.uk/) | entire site | image | (https://www.retroclasico.co.uk/wp-content/uploads/2020/08/DAVIE-COOPER-SQUARE.fw_-600x600.png) |
