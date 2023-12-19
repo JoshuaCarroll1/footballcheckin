@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get("DEBUG", False)
 
 ALLOWED_HOSTS = [
-    '8000-joshuacarro-footballche-a0ry1rw2vvg.ws-eu106.gitpod.io',
+    '8000-joshuacarro-footballche-a0ry1rw2vvg.ws-eu107.gitpod.io',
     'footballcheckup-ae432318f52b.herokuapp.com'
 ]
 

@@ -5,15 +5,13 @@
 
 /* Body */
 body {
-    background-color: #DDD0C8;
-    margin: 0 auto;
+    background-color: #000000;
     font-family: 'DM Sans', sans-serif;
-
 }
 
 /* Navbar */
 .navbar {
-    background-color: #964B00;
+    background-color: #3e0a4e;
     position: fixed;
     top: 0%;
     width: 100%;
@@ -22,13 +20,13 @@ body {
 }
 
 a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 25px;
 }
 
 a:hover {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -41,35 +39,37 @@ a:hover {
 }
 
 li {
-    color: #323232;
+    color: #ffffff;
 }
 
 /* Headings */
 
 h1 {
-    color: #323232;
+    color: #ffffff;
 }
 
 h2 {
+    color: #fffdfd;
     margin-top: 100px;
     margin-bottom: 120px;
 }
 
-/* Media */
-
-#logo1 {
-    margin-bottom: 100px;
-    height: 250px;
-    width: 100%;
-    object-fit: cover;
-    margin-top: 150px;
+p  {
+    color: #ffffff;
 }
 
-#logo2 {
+/* Media */
+
+#logo {
     margin-bottom: 60px;
     height: 250px;
     width: 100%;
     object-fit: cover;
+}
+
+#indexpic   {
+    object-fit: cover;
+    height: 400px;
 }
 
 /* Layout */
@@ -89,27 +89,19 @@ section {
 /* Hr */
 
 hr {
-    border: 1px solid #964B00;
+    border: 1px solid #d4d4d4;
 }
 
 
 /* Media Queries */
 
 @media screen and (min-width:860px) {
-    #logo1 {
+    
+    #logo {
         height: 500px;
         width: 75%;
     }
 
-    #logo2 {
-        height: 500px;
-        width: 75%;
-    }
-
-    .btn {
-        height: 50px;
-        width: 15%;
-    }
 
     p {
         font-size: 20px;
