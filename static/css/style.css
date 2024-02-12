@@ -69,13 +69,6 @@ footer  {
     object-fit: cover;
 }
 
-#ball   {
-    height: 250px;
-    width: 70%;
-    object-fit: cover;
-    border-radius: 50%; 
-}
-
 /* Layout */
 
 section {
@@ -98,11 +91,6 @@ hr {
     #logo {
         height: 500px;
         width: 75%;
-    }
-
-    #ball {
-        height: 300px;
-        width: 30%;
     }
 
     p {
